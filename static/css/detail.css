@@ -1,0 +1,25 @@
+* {
+            box-sizing: border-box;
+            word-wrap: break-word;
+        }
+
+        html {
+            font-family: Arial, Microsoft YaHei;
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            height: 100%;
+            background-color: #F2F2F2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container,
+        .container>div {
+            height: 100%;
+            background-color: #F2F2F2;
+            width: 100%;
+            max-width: 1024px;
+        }

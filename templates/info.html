@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" lang="zh">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>tzinfo - 潭州教育匿名社区</title>
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+        <script type="text/javascript" charset="utf-8" async="" src="/dist/chunks/2.3ed89d49dc5d5464ffe0.chunk.js"></script>
+        <style type="text/css">._3-k1jqFYyCZDDq1tXnEDKS{-webkit-overflow-scrolling:touch}</style>
+        <link rel="stylesheet" href="{% static 'css/a.css' %}">
+    </head>
+    
+    <body>
+
+        <style>* { box-sizing: border-box; word-wrap: break-word; } html { font-family: Arial, Microsoft YaHei; height: 100%; } body { margin: 0px; height: 100%; background-color: #F2F2F2; display: flex; justify-content: center; } .container, .container&gt;div { height: 100%; background-color: #F2F2F2; width: 100%; max-width: 1024px; }</style>
+        <div class="container">
+            <div data-reactroot="">
+                <div style="height: 100%;">
+                    <div id="homeList" class="_3-k1jqFYyCZDDq1tXnEDKS" style="overflow: scroll; flex: 0 1 auto; height: 100%; background-color: white;">
+                        <div style="display: flex; justify-content: center; padding: 16px 0px 6px; color: rgb(170, 170, 170); font-size: 17px;">
+                            <div style="border: 1px solid rgb(66, 185, 131); padding: 6px 20px; color: white; background-color: rgb(66, 185, 131); font-weight: 700;">最新</div>
+                            <div style="border-top: 1px solid rgb(66, 185, 131); border-right: 1px solid rgb(66, 185, 131); border-bottom: 1px solid rgb(66, 185, 131); padding: 6px 20px;">热门</div></div>
+                        {% for article in articles %}
+                        <div style="padding: 12px 25px 4px; border-bottom: 12px solid rgb(242, 242, 242);">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center;">
+                                    <div>
+                                        <img src="http://ww1.sinaimg.cn/thumbnail/d9f8fd81gy1feolhb8smlj20lz0ly42j.jpg" style="height: 42px; width: 42px; margin-right: 15px; border-radius: 50%;" /></div>
+                                    <div style="font-size: 17px;">某同事·男</div></div>
+                                <div style="color: rgb(153, 153, 153); letter-spacing: 0.8px;">{{ article.date_publish }}</div></div>
+                            <div>
+                                <div style="padding: 4px 0px 10px; overflow: hidden; line-height: 1.5; white-space: pre-wrap; font-size: 17px;">
+
+                                    <span><a href="{% url 'detail' %}?id={{ article.id }}">{{ article.content }}</a></span></div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 0.03em solid rgb(203, 202, 206); padding: 4px 0px 5px; font-size: 25px; color: rgb(153, 153, 153);">
+                                    <div style="font-size: 28px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle;">
+                                            <g>
+                                                <path d="m20 16.6q1.3 0 2.3 1.1t1.1 2.3-1.1 2.3-2.3 1.1-2.3-1.1-1.1-2.3 1.1-2.3 2.3-1.1z m10 0q1.3 0 2.3 1.1t1.1 2.3-1.1 2.3-2.3 1.1-2.3-1.1-1.1-2.3 1.1-2.3 2.3-1.1z m-20 0q1.3 0 2.3 1.1t1.1 2.3-1.1 2.3-2.3 1.1-2.3-1.1-1.1-2.3 1.1-2.3 2.3-1.1z" /></g>
+                                        </svg>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div style="display: flex; align-items: center; text-align: center; justify-content: center; margin-left: 18px;">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle;">
+                                                    <g>
+                                                        <path d="m20 8.6q-4.6 0-8.5 1.5t-6.3 4.2-2.3 5.7q0 2.5 1.6 4.8t4.4 3.9l2 1.1-0.6 2.1q-0.5 2.1-1.6 3.9 3.4-1.4 6.2-3.8l0.9-0.9 1.3 0.2q1.5 0.1 2.9 0.1 4.6 0 8.5-1.5t6.3-4.2 2.3-5.7-2.3-5.7-6.3-4.2-8.5-1.5z m20 11.4q0 3.9-2.7 7.2t-7.3 5.2-10 1.9q-1.6 0-3.2-0.2-4.5 3.9-10.3 5.4-1.1 0.3-2.6 0.5h-0.1q-0.3 0-0.6-0.2t-0.3-0.6v-0.1q-0.1-0.1 0-0.2t0-0.3 0.1-0.2l0.1-0.2 0.2-0.2 0.2-0.2q0.1-0.1 0.7-0.7t0.7-0.9 0.7-0.9 0.8-1.1 0.6-1.3 0.5-1.7q-3.5-2-5.5-4.9t-2-6.3q0-3.9 2.7-7.2t7.3-5.2 10-1.9 10 1.9 7.3 5.2 2.7 7.2z" /></g>
+                                                </svg>
+                                            </div>
+                                            <div style="flex: 1 1 0%; font-size: 18px; margin: 8px 0px 0px 8px;">0</div></div>
+                                        <div style="display: flex; align-items: center; text-align: center; justify-content: center; margin-left: 18px;">
+                                            <div style="margin-top: 4px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle;">
+                                                    <g>
+                                                        <path d="m37.1 13.3q0-1.8-0.4-3.2t-1.3-2.2-1.8-1.3-2.1-0.7-2.2-0.2-2.5 0.6-2.4 1.4-2 1.6-1.3 1.4q-0.4 0.5-1.1 0.5t-1.1-0.5q-0.5-0.6-1.3-1.4t-2-1.6-2.4-1.4-2.5-0.6-2.2 0.2-2.1 0.7-1.8 1.3-1.3 2.2-0.4 3.2q0 3.8 4.1 7.9l13 12.5 12.9-12.4q4.2-4.2 4.2-8z m2.9 0q0 4.9-5.1 10l-13.9 13.4q-0.4 0.4-1 0.4t-1-0.4l-13.9-13.4q-0.2-0.2-0.6-0.6t-1.3-1.4-1.5-2.2-1.2-2.7-0.5-3.1q0-4.9 2.8-7.7t7.9-2.7q1.4 0 2.8 0.4t2.7 1.3 2.1 1.6 1.7 1.5q0.8-0.8 1.7-1.5t2.1-1.6 2.7-1.3 2.8-0.4q5 0 7.9 2.7t2.8 7.7z" /></g>
+                                                </svg>
+                                            </div>
+                                            <div style="flex: 1 1 0%; font-size: 18px; margin: 8px 0px 0px 8px;">0</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                        
+                        <div style="display: flex; justify-content: center; color: rgba(0, 0, 0, 0.7); margin-bottom: 36px; padding: 15px; border-bottom: 12px solid white;">
+                            <div style="color: rgb(66, 185, 131); font-size: 17px;">
+                                <!-- react-text: 456 -->查看更多
+                                <!-- /react-text -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle; font-size: 24px; margin-left: 2px; margin-top: -6px;">
+                                    <g>
+                                        <path d="m31 16.4q0 0.3-0.2 0.5l-10.4 10.4q-0.3 0.3-0.5 0.3t-0.6-0.3l-10.4-10.4q-0.2-0.2-0.2-0.5t0.2-0.5l1.2-1.1q0.2-0.2 0.5-0.2t0.5 0.2l8.8 8.8 8.7-8.8q0.3-0.2 0.5-0.2t0.6 0.2l1.1 1.1q0.2 0.2 0.2 0.5z" /></g></svg>
+                            </div>
+                            <div>
+                                <!-- react-text: 461 -->
+                                <!-- /react-text --></div>
+                        </div>
+                    </div>
+
+                    <div style="position: fixed; width: 100%; display: flex; flex: 0 1 50px; left: 0px; bottom: 0px; align-items: center; text-align: center; border-top: 0.05em solid rgb(203, 202, 206); box-shadow: rgba(255, 255, 255, 0.1) 0.5px 0.5px 0.5px 0.5px; background-color: rgb(255, 255, 255); padding: 9px 0px;">
+                        <div style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                            <div style="position: relative; display: inline;">
+                                <a href="{% url 'index' %}"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle; color: rgb(66, 185, 131); font-size: 32px;">
+                                    <g>
+                                        <path d="m20 5s-10.3 8.9-16.1 13.7c-0.3 0.3-0.6 0.8-0.6 1.3 0 0.9 0.8 1.7 1.7 1.7h3.3v11.6c0 1 0.8 1.7 1.7 1.7h5c0.9 0 1.7-0.7 1.7-1.7v-6.6h6.6v6.6c0 1 0.8 1.7 1.7 1.7h5c0.9 0 1.7-0.7 1.7-1.7v-11.6h3.3c0.9 0 1.7-0.8 1.7-1.7 0-0.5-0.3-1-0.7-1.3-5.7-4.8-16-13.7-16-13.7z"></path>
+                                    </g>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                            <div style="position: relative; display: inline;">
+                                <a href="{% url 'publish' %}">
+                                <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle; color: rgb(170, 170, 170); font-size: 32px;">
+                                    <g>
+                                        <path d="m28.4 21.6v-3.2h-6.8v-6.8h-3.2v6.8h-6.8v3.2h6.8v6.8h3.2v-6.8h6.8z m-8.4-18.2c9.2 0 16.6 7.4 16.6 16.6s-7.4 16.6-16.6 16.6-16.6-7.4-16.6-16.6 7.4-16.6 16.6-16.6z"></path>
+                                    </g>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                            <div style="position: relative; display: inline;">
+                                <a href="{% url 'login' %}"><svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle; color: rgb(170, 170, 170); font-size: 32px;">
+                                    <g>
+                                        <path d="m20 32c4.1 0 7.8-2.2 10-5.4-0.1-3.2-6.7-5.1-10-5.1-3.4 0-9.9 1.9-10 5.1 2.2 3.2 5.9 5.4 10 5.4z m0-23.6c-2.7 0-5 2.2-5 5s2.3 5 5 5 5-2.3 5-5-2.3-5-5-5z m0-5c9.2 0 16.6 7.4 16.6 16.6s-7.4 16.6-16.6 16.6-16.6-7.4-16.6-16.6 7.4-16.6 16.6-16.6z"></path>
+                                    </g>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </div>
+                </div>
+                <div>
+                    <div class="notifications-wrapper">
+
+                    </div>
+                    <div style="display: none;"></div>
+                </div>
+                <!-- react-empty: 5 --></div>
+        </div>
+
+
+    </body>
+
+</html>

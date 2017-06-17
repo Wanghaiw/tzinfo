@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" href="{% static 'css/a.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <div class="container">
+    <div data-reactroot="">
+        <div class="_2TvGmpxSVi3urcSrWGNkX_" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; background-color: white; width: 100%;">
+            <div style="overflow: auto; margin: 0px 0px 57px;">
+                <div style="display: flex; padding: 5px 15px; align-items: center; background-color: rgb(66, 185, 131); color: white;">
+                    <div style="flex: 1 1 0%;">
+                        <div style="display: flex; align-items: center; font-size: 17px;">
+                            <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle; font-size: 32px; margin-right: -6px;">
+                                <g>
+                                    <path d="m26.5 12.1q0 0.3-0.2 0.6l-8.8 8.7 8.8 8.8q0.2 0.2 0.2 0.5t-0.2 0.5l-1.1 1.1q-0.3 0.3-0.6 0.3t-0.5-0.3l-10.4-10.4q-0.2-0.2-0.2-0.5t0.2-0.5l10.4-10.4q0.3-0.2 0.5-0.2t0.6 0.2l1.1 1.1q0.2 0.2 0.2 0.5z"></path>
+                                </g>
+                            </svg>
+                            <div><a href="{% url 'index' %}">返回</a></div></div>
+                    </div>
+                    <div style="flex: 1 1 0%; text-align: center; font-weight: 700; font-size: 18px;">tzinfo</div>
+                    <div style="flex: 1 1 0%;"></div>
+                </div>
+                <div style="padding: 12px 25px 4px; border-bottom: 12px solid rgb(242, 242, 242);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center;">
+                            <div>
+                                <img src="{{ article.user.avatar }}" style="height: 42px; width: 42px; margin-right: 15px; border-radius: 50%;"></div>
+                            <div style="font-size: 17px;">某同学·男</div></div>
+                        <div style="color: rgb(153, 153, 153); letter-spacing: 0.8px;">{{ article.date_publish|date:'Y年-m月-d号:H点-i分-s秒' }}</div></div>
+                    <div>
+
+                        <div style="padding: 4px 0px 10px; overflow: hidden; line-height: 1.5; white-space: pre-wrap; font-size: 17px;">
+                            <span>{{ article.content }}</span></div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 0.03em solid rgb(203, 202, 206); padding: 4px 0px 5px; font-size: 25px; color: rgb(153, 153, 153);">
+                            <div style="font-size: 28px;">
+                                <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle;">
+                                    <g>
+                                        <path d="m20 16.6q1.3 0 2.3 1.1t1.1 2.3-1.1 2.3-2.3 1.1-2.3-1.1-1.1-2.3 1.1-2.3 2.3-1.1z m10 0q1.3 0 2.3 1.1t1.1 2.3-1.1 2.3-2.3 1.1-2.3-1.1-1.1-2.3 1.1-2.3 2.3-1.1z m-20 0q1.3 0 2.3 1.1t1.1 2.3-1.1 2.3-2.3 1.1-2.3-1.1-1.1-2.3 1.1-2.3 2.3-1.1z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div style="display: flex;">
+                                <div style="display: flex; align-items: center; text-align: center; justify-content: center; margin-left: 18px;">
+                                    <div>
+                                        <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle;">
+                                            <g>
+                                                <path d="m20 8.6q-4.6 0-8.5 1.5t-6.3 4.2-2.3 5.7q0 2.5 1.6 4.8t4.4 3.9l2 1.1-0.6 2.1q-0.5 2.1-1.6 3.9 3.4-1.4 6.2-3.8l0.9-0.9 1.3 0.2q1.5 0.1 2.9 0.1 4.6 0 8.5-1.5t6.3-4.2 2.3-5.7-2.3-5.7-6.3-4.2-8.5-1.5z m20 11.4q0 3.9-2.7 7.2t-7.3 5.2-10 1.9q-1.6 0-3.2-0.2-4.5 3.9-10.3 5.4-1.1 0.3-2.6 0.5h-0.1q-0.3 0-0.6-0.2t-0.3-0.6v-0.1q-0.1-0.1 0-0.2t0-0.3 0.1-0.2l0.1-0.2 0.2-0.2 0.2-0.2q0.1-0.1 0.7-0.7t0.7-0.9 0.7-0.9 0.8-1.1 0.6-1.3 0.5-1.7q-3.5-2-5.5-4.9t-2-6.3q0-3.9 2.7-7.2t7.3-5.2 10-1.9 10 1.9 7.3 5.2 2.7 7.2z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div style="flex: 1 1 0%; font-size: 18px; margin: 8px 0px 0px 8px;">{{ comment_list_num }}</div></div>
+                                <div style="display: flex; align-items: center; text-align: center; justify-content: center; margin-left: 18px;">
+                                    <div style="margin-top: 4px;">
+                                        <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle;">
+                                            <g>
+                                                <path d="m37.1 13.3q0-1.8-0.4-3.2t-1.3-2.2-1.8-1.3-2.1-0.7-2.2-0.2-2.5 0.6-2.4 1.4-2 1.6-1.3 1.4q-0.4 0.5-1.1 0.5t-1.1-0.5q-0.5-0.6-1.3-1.4t-2-1.6-2.4-1.4-2.5-0.6-2.2 0.2-2.1 0.7-1.8 1.3-1.3 2.2-0.4 3.2q0 3.8 4.1 7.9l13 12.5 12.9-12.4q4.2-4.2 4.2-8z m2.9 0q0 4.9-5.1 10l-13.9 13.4q-0.4 0.4-1 0.4t-1-0.4l-13.9-13.4q-0.2-0.2-0.6-0.6t-1.3-1.4-1.5-2.2-1.2-2.7-0.5-3.1q0-4.9 2.8-7.7t7.9-2.7q1.4 0 2.8 0.4t2.7 1.3 2.1 1.6 1.7 1.5q0.8-0.8 1.7-1.5t2.1-1.6 2.7-1.3 2.8-0.4q5 0 7.9 2.7t2.8 7.7z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div style="flex: 1 1 0%; font-size: 18px; margin: 8px 0px 0px 8px;">15</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- react-text: 955 -->
+                <!-- /react-text -->
+                {% for comment in comment_list %}
+                 <div style="display: flex; flex-direction: column; background-color: white; padding: 0px 25px; margin-bottom: 15px;">
+                    <div style="display: flex; flex-direction: column; border-bottom: 0.03em solid rgb(203, 202, 206);">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 8px 0px 4px;">
+                                <img src="{{ MEDIA_URL }}{{ comment.user.avatar }}" style="height: 40px; width: 40px; border-radius: 50%; margin-right: 15px;">
+                                <div style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="padding: 2px 0px 3px; font-size: 14px;">{{ comment.user }}</div>
+                                    <div>
+                                        <div style="color: rgb(153, 153, 153); letter-spacing: 0.8px; padding: 3px 0px 1px; font-size: 13px;">{{ comment.date_publish|date:'Y年-m月-d号:H点-i分-s秒'  }}</div></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; padding: 8px 0px; color: rgb(153, 153, 153);">
+                                <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40" style="vertical-align: middle; font-size: 23px;">
+                                    <g>
+                                        <path d="m28.3 24q-0.8 2.7-3.1 4.3t-5.1 1.7-5-1.6-3.1-4.4q-0.2-0.6 0.1-1.1t0.8-0.7q0.6-0.2 1.1 0.1t0.7 0.8q0.6 1.8 2.1 2.9t3.3 1.1 3.4-1.1 2.1-2.9q0.2-0.5 0.7-0.8t1.1-0.1 0.8 0.7 0.1 1.1z m-11-9.7q0 1.2-0.9 2t-2 0.8-2-0.8-0.8-2 0.8-2 2-0.9 2 0.9 0.9 2z m11.4 0q0 1.2-0.8 2t-2 0.8-2.1-0.8-0.8-2 0.8-2 2.1-0.9 2 0.9 0.8 2z m5.7 5.7q0-2.9-1.1-5.5t-3.1-4.6-4.5-3.1-5.6-1.1-5.5 1.1-4.6 3.1-3 4.6-1.1 5.5 1.1 5.5 3 4.6 4.6 3 5.5 1.2 5.6-1.2 4.5-3 3.1-4.6 1.1-5.5z m2.9 0q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z"></path>
+                                    </g>
+                                </svg>
+                                <div style="font-size: 16px; margin-left: 5px; margin-top: 3px;">0</div></div>
+                        </div>
+                        <div style="padding: 0px 0px 5px; line-height: 1.5; font-size: 16px; text-align: justify;">{{ comment.content }}</div></div>
+
+                </div>
+            </div>
+            {% endfor %}
+            <div style="position: fixed; width: 100%; max-width: 1024px; display: flex; color: rgba(0, 0, 0, 0.8); padding: 12px 15px; bottom: 0px; border-top: 0.03em solid rgb(203, 202, 206); box-shadow: rgba(0, 0, 0, 0.05) 0.5px 0.5px 0.5px 0.5px;">
+                <textarea placeholder="请登录后再评论" style="flex: 1 1 auto; background-color: rgb(242, 242, 242); border-radius: 5px; border-style: none; outline: none; min-height: 22px; line-height: 22px; resize: none; padding: 6px; margin-right: 8px; font-size: 17px; height: 34px;"></textarea>
+                <div style="color: rgb(153, 153, 153); flex: 0 1 38px; padding: 0.1em 0px; text-align: center; font-size: 18px;">发送</div></div>
+        </div>
+        <div>
+            <div class="notifications-wrapper"></div>
+            <div style="display: none;"></div>
+        </div>
+        <!-- react-empty: 5 --></div>
+</div>
+</body>
+</html>
